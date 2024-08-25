@@ -1,11 +1,11 @@
 ![cover](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/img/cover.png?raw=true)
-
 # 红色学术风SCU主题
 
+[下载与安装](#下载与安装)<br/>
 本项目一共提供两个Typora主题，均为白天主题，无黑夜主题：
 
 
-| theme-scu-essay                                              | them-scu                                                     |
+| scu-essay                                              | scu                                                     |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | 以[latex主题](https://github.com/Keldos-Li/typora-latex-theme)为模板，参考`四川大学本科毕业论文（设计）格式和参考文献著录要求`，从好看的角度优化过字体和行间距，**并未严格遵守要求**，但能够满足大部分**中国大陆本科生**的**课程论文**需求。<br/>该模板适合课程论文的书写，不建议日用。 | 参考了lapis模板，采用川大锦绣红风格。<br />该模板适合日常使用 |
 | ![theme-scu-essay.png](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/img/theme-scu-essay.png?raw=true) | ![theme-scu.png](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/img/theme-scu.png?raw=true) |
@@ -88,5 +88,19 @@
 >举例，如果需要修改页边距为上1cm、下1cm、左2cm、右1.5cm，则应填：`1cm 1.5cm 1cm 2cm`
 >
 >![image-20240825035038063.png](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/template/assets/image-20240825035038063.png?raw=true)
+>
+
+## 下载与安装
+请完整阅读以下过程，以确保一切符合预期。
+
+Typora 是一个支持实时预览的 markdown 编辑器。在安装本主题前，请确认您已下载 Typora 并完成了安装。如果您对 markdown 的语法还不了解，您可以从这里获得帮助。
+
+前往本项目的 release 页面，下载source.zip。
+
+解压缩这个文件，进入解压缩后的文件夹。参考Typora官方文件的安装教程完成剩余的安装步骤。
+
+**请务必确认您完成了下面的步骤：**
+- 安装主题
+- 下载并安装所需的字体
 
 
