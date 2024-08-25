@@ -1,0 +1,632 @@
+@charset "UTF-8";
+
+body {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/*打印页边距设置*/
+@media print {
+  #write {
+    padding: 0 !important;
+  }
+
+}
+
+#write {
+  max-width: 950px;
+  font-size: 1.1rem;
+  color: rgb(0, 0, 0);
+  line-height: 1.6;
+  word-spacing: 0px;
+  letter-spacing: 0px;
+  word-break: break-word;
+  word-wrap: break-word;
+  text-align: justify;
+
+  font-family: 'Cantarell', 'SourceHanSerifCN';
+  margin-bottom: 20rem;
+}
+
+#write .md-math-block,
+#write .md-rawblock,
+#write p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+#write p {
+  text-align: left;
+  line-height: 1.5em;
+}
+
+/* TOC */
+
+ .md-toc-content {
+  font-family: 'SourceHanSerifCN';
+}
+
+.md-toc-content:empty:before {
+  color: rgb(181,54,41);
+}
+
+#write div.md-toc-tooltip {
+  font-family: 'SourceHanSerifCN';
+  color: rgb(181,54,41);
+  position: static;
+  margin-top: 10px;
+  background-color: #f6f8fa;
+  line-height: 1.6rem;
+  padding: 0.3rem 0.75rem;
+  border-top: none;
+  border-radius: .5rem;
+}
+
+.md-toc:focus .md-toc-content {
+  border-color: #ffffff;
+  margin: 9px -1px;
+  margin-top: 9px;
+}
+
+.md-toc .md-toc-content {
+  border-color: #ffffff;
+  margin: 10px 0px;
+  margin-top: 10px;
+}
+
+/* 分割线hr */
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 2px solid rgb(181,54,41);
+  border-radius: 2px;
+}
+
+img {
+  /* 避免图片在导出时被断开 */
+  page-break-inside: avoid;
+}
+
+strong {
+  font-weight: 900;
+}
+
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+/* typora 编写模式 */
+#typora-source {
+  font-family: "Cantarell", "SourceHanSerifCN";
+  line-height: 2em;
+}
+
+/* Sidebar */
+ #typora-sidebar {
+  font-family: 'Cantarell', 'SourceHanSerifCN';
+  height: 100%;
+  color: #40464f;
+  font-size: 0.92rem;
+  background-color:  #ffffff;
+}
+
+#sidebar-content.sidebar-content {
+  margin-top: .5rem;
+}
+
+/* Sidebar - FileNode */
+
+.active-tab-files #info-panel-tab-file .info-panel-tab-border,
+.active-tab-outline #info-panel-tab-outline .info-panel-tab-border,
+.ty-show-search #info-panel-tab-search .info-panel-tab-border {
+  border-radius: 10px;
+  height: 1px;
+  background-color: rgb(181,54,41);
+}
+
+.file-node-content {
+  color: rgb(181,54,41);
+  line-height: 1.6rem;
+}
+
+span.file-node-title-name-part {
+  color: #40464f;
+}
+
+span.file-node-title-ext-part {
+  color: #40464f;
+}
+
+.file-node-icon {
+  padding-right: 0.2rem;
+}
+
+.file-tree-node.active>.file-node-background {
+  border-left: 4px solid rgb(181,54,41);
+  border-color: rgb(181,54,41);
+}
+
+/* Sidebar - Outline */
+
+#outline-content {
+  height: 100%;
+  overflow-x: hidden;
+  line-height: 1.6rem;
+  font-size: .96rem;
+}
+
+#outline-content .outline-active,
+.pin-outline .outline-active {
+  color: rgb(181,54,41);
+}
+
+.outline-item {
+  padding-left: 2em;
+}
+
+.outline-item>.outline-expander:before {
+  transform: translateY(-1px) !important;
+}
+
+/* Meta Block */
+
+pre.md-meta-block {
+  font-family: 'JetBrainsMono';
+  color: rgb(181,54,41);
+  background: #f6f8fa;
+  padding: 1.5rem;
+  margin: -37px 0rem 3.8rem;
+  filter: drop-shadow(#e3e8f0 0px 3px 3px);
+}
+
+pre.md-fences-advanced.md-focus .md-fences-adv-panel {
+  border-radius: .8rem;
+}
+
+/* Scrollbar */
+
+#outline-content::-webkit-scrollbar {
+  width: .5rem;
+}
+
+#file-library::-webkit-scrollbar {
+  width: .5rem;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgb(181,54,41);
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+#write > h3.md-focus:before,
+#write > h4.md-focus:before,
+#write > h5.md-focus:before,
+#write > h6.md-focus:before,
+h3.md-focus:before,
+h4.md-focus:before,
+h5.md-focus:before,
+h6.md-focus:before {
+  color: inherit;
+  border: inherit;
+  border-radius: inherit;
+  position: inherit;
+  left: initial;
+  float: none;
+  top: initial;
+  font-size: inherit;
+  padding-left: inherit;
+  padding-right: inherit;
+  vertical-align: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+/* Header */
+#write h1,
+#write h2,
+#write h3,
+#write h4,
+#write h5,
+#write h6 {
+  font-family: 'SourceHanSerifCN';
+  padding: 0px;
+  color: rgb(181,54,41);
+}
+
+#write h1 {
+  text-align: center;
+}
+
+#write h2 {
+  background-color: rgb(181,54,41);
+  color: #ffffff;
+  padding: 1px 12.5px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+#write h2 a {
+  color: #ffffff;
+  border-bottom-color: #ffffff !important;
+}
+
+#write h2 strong {
+  color: #ffffff;
+}
+
+#write h2 code {
+  color: #ffffff;
+  background-color: rgb(181,54,41);
+}
+
+#write h1 {
+  font-size: 2rem;
+}
+
+#write h2 {
+  font-size: 1.5rem;
+}
+
+#write h3 {
+  font-size: 1.4rem;
+}
+
+#write h4 {
+  font-size: 1.2rem;
+}
+
+#write h5 {
+  font-size: 1.1rem;
+}
+
+#write h6 {
+  font-size: 1.1rem;
+}
+
+#write h1 {
+  padding-top: 0.9rem;
+  margin-bottom: 2.3rem;
+}
+
+#write h2 {
+  margin: .3em 0;
+}
+
+#write h3 {
+  margin: 1em 0 1em;
+}
+
+#write h4 {
+  margin: 0.8em 0 0.8em;
+}
+
+#write h5 {
+  margin: 0.6em 0 0.6em;
+}
+
+#write h6 {
+  margin: 0.4em 0 0.4em;
+}
+
+/* List */
+::marker {
+  font-weight: bold;
+  color: rgb(181,54,41,0.8);
+}
+
+li.md-list-item {
+  margin: 0.4rem 0;
+}
+
+#write ul,
+#write ol {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-left: 20px;
+}
+
+#write ul {
+  list-style-type: disc;
+}
+
+#write em {
+  padding: 0 3px 0 0;
+}
+
+#write ul ul {
+  list-style-type: square;
+}
+
+#write ol {
+  list-style-type: decimal;
+}
+
+#write li section {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  line-height: 1.7rem;
+  text-align: justify;
+  color: #40464f;
+  font-weight: 500;
+}
+
+/* Checkbox */
+#write input[type=checkbox] {
+  width: 0;
+}
+
+.task-list-item input::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0px; 
+  bottom: -1px;
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 1.5px solid rgb(181,54,41);
+  border-radius: 2px;
+  background-color: #fdfdfd;
+  margin-top: -0.4rem;
+}
+
+/* 勾选后的样式 */
+.task-list-item input:checked::before {
+  background-color: rgb(181,54,41); 
+  border: 1.5px solid rgb(181,54,41); 
+}
+
+/* 勾选后的勾号 */
+.task-list-item input:checked::after {
+  content: '';
+  position: absolute;
+  left: 5.2px; /* 根据需要调整 */
+  bottom: 2.5px; /* 根据需要调整 */
+  width: 7px; /* 根据需要调整 */
+  height: 12px; /* 根据需要调整 */
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+
+/* Table */
+ #write table {
+  display: table;
+  text-align: justify;
+  overflow-x: auto;
+  border-collapse: collapse;
+  border-spacing: 0px;
+  font-size: 1em;
+  margin: 0px 0px 20px;
+  width: 100%;
+}
+
+#write tbody {
+  border: 0;
+}
+
+#write table tr {
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+#write table tr th,
+#write table tr td {
+  font-size: 1rem;
+  border: 1px solid #d9dfe4;
+  padding: 5px 10px;
+  text-align: justify;
+}
+
+#write table tr th {
+  font-family: SourceHanSerifCN;
+  text-align: center;
+  min-width: 10rem;
+  font-weight: bold;
+  color: rgb(181,54,41);
+}
+
+#write table tr td:hover,
+#write table tr th:hover {
+  background-color: #f6f8fa;
+}
+
+table td {
+  min-width: 32px;
+}
+
+.md-table-resize-popover {
+  width: auto !important;
+}
+
+/* Quote */
+blockquote {
+  display: block;
+  font-size: 12pt;
+  overflow: auto;
+  border-left: 3px solid rgb(181,54,41);
+  padding: 15px 30px 15px 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background: white;
+  box-shadow: 2px 2px 5px #eef2f5;
+  border-radius: 2px;
+  font-family: 'Cantarell','SourceHanSerifCN';
+}
+
+
+/* 行内代码 */
+code {
+  font-family: "JetBrainsMono";
+}
+
+h1 code, h2 code, h3 code, h4 code, h5 code, h6 code,
+p code,
+li code {
+  color: rgb(181,54,41);
+  background-color: #fefefe;
+  font-family: 'Cantarell', 'SourceHanSerifCN';
+  text-align: justify;
+  vertical-align: baseline;
+  box-shadow: 1px 1px 5px #c8d3df;
+  padding: 2px;
+  /* 圆角 */
+  border-radius: 2px;
+}
+
+/* 代码块样式 */
+/* code fences */
+
+.md-fences:after {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 5px;
+  width: 12px;
+  height: 12px;
+  background-color: #ff374b;
+  border-radius: 6px;
+  z-index: 999999;
+  box-shadow: 20px 0 #ffc600, 40px 0 #00e03d;
+}
+
+.CodeMirror.cm-s-inner {
+  margin-top: 15px;
+  background-color: white;
+  border-radius: 3px;
+}
+
+.cm-s-inner.CodeMirror {
+  padding: 1.5rem .8rem;
+  color: #4f5467;
+  font-family: 'JetBrainsMono';
+  font-weight: 900;
+  font-size: 1em;
+  border-radius: 10px;
+  background-color: #f6f8fa;
+  /* border: 1px solid #eef2f5;*/
+  line-height: 1.6rem;
+}
+
+/* 去除数字后的线 */
+.cm-s-inner .CodeMirror-gutters {
+  background-color: #f6f8fa;
+  border: none;
+}
+
+/*  Code Block - Color Scheme */
+
+ .cm-s-inner .cm-keyword {
+  color: rgb(181,54,41) !important;
+}
+
+.cm-s-inner .cm-operator {
+  color: rgb(177, 103, 95) !important;
+}
+
+.cm-s-inner .cm-variable,
+.cm-s-inner .cm-builtin,
+.cm-s-inner .cm-header,
+.cm-s-inner .cm-tag,
+.cm-s-inner .cm-property,
+.cm-s-inner .cm-quote {
+  color: #b9218e !important;
+}
+
+.cm-s-inner .cm-variable-2 {
+  color: #7aadad !important;
+}
+
+.cm-s-inner .cm-variable-3,
+.cm-s-inner .cm-type,
+.cm-s-inner .cm-atom {
+  color: rgb(234, 130, 128) !important;
+}
+
+.cm-s-inner .cm-number {
+  color: rgb(155, 30, 27) !important;
+}
+
+.cm-s-inner .cm-def,
+.cm-s-inner .cm-qualifier {
+  color: rgb(72, 13, 12) !important;
+}
+
+.cm-s-inner .cm-string {
+  color: #6f42c2 !important;
+}
+
+.cm-s-inner .cm-string-2 {
+  color: rgb(204, 71, 23) !important;
+}
+
+.cm-s-inner .cm-comment {
+  color: #9a9a9a !important;
+}
+
+.cm-s-inner .cm-meta {
+  color: rgb(222, 44, 16) !important;
+}
+
+.cm-s-inner .cm-attribute {
+  color: #8f6aa8 !important;
+}
+
+.cm-s-inner .cm-error {
+  color: rgba(255, 255, 255, 1) !important;
+  background-color: #b9218e40 !important;
+}
+
+.cm-s-inner .CodeMirror-matchingbracket {
+  text-decoration: underline;
+  color: white !important;
+}
+
+.CodeMirror div.CodeMirror-cursor {
+  border-left: 1px solid var(--primary-color);
+  z-index: 3;
+}
+
+.cm-s-inner div.CodeMirror-selected {
+  background: rgba(167, 178, 189, 0.2) !important;
+}
+
+.cm-s-inner.CodeMirror-focused div.CodeMirror-selected {
+  background: rgba(167, 178, 189, 0.2) !important;
+}
+
+.cm-s-inner .CodeMirror-selected,
+.cm-s-inner .CodeMirror-selectedtext {
+  background-color: rgba(167, 178, 189, 0.0) !important;
+}
+
+.cm-s-inner .CodeMirror-line::-moz-selection,
+.cm-s-inner .CodeMirror-line>span::-moz-selection,
+.cm-s-inner .CodeMirror-line>span>span::-moz-selection {
+  background-color: rgba(167, 178, 189, 0.2);
+}
+
+.cm-s-inner .CodeMirror-line::selection,
+.cm-s-inner .CodeMirror-line>span::selection,
+.cm-s-inner .CodeMirror-line>span>span::selection {
+  background-color: rgba(167, 178, 189, 0.2);
+}
+
+.md-rawblock .md-rawblock-tooltip {
+  inset: auto 0.3rem auto auto;
+  transform: translateY(-120%);
+}
+

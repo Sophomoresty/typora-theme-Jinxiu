@@ -1,0 +1,633 @@
+@charset "UTF-8";
+
+body {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/*打印页边距设置*/
+@media print {
+  #write {
+    padding: 0 !important;
+  }
+
+  @page {
+    margin: 2.5cm 2cm 2.5cm 2.5cm !important;
+    /* 页边距 */
+  }
+}
+
+#write {
+  font-family: "Times New Roman",'SourceHanSerifCN';
+  font-size: 12pt;
+  text-align: justify;
+  /* A4标准宽度 */
+  max-width: 21cm;
+  background-color: white;
+}
+#write .md-math-block,
+#write .md-rawblock,
+#write p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+#write p {
+  text-align: left;
+  line-height: 1.5em;
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 2px solid rgb(181,54,41);
+  border-radius: 2px;
+}
+
+img {
+  /* 避免图片在导出时被断开 */
+  page-break-inside: avoid;
+}
+
+strong {
+  font-weight: 900;
+}
+
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+/* typora 编写模式 */
+#typora-source {
+  font-family: "Cantarell", "SourceHanSerifCN";
+  line-height: 2em;
+}
+
+/* Text */
+
+/*
+ * Sidebar
+ */
+ #typora-sidebar {
+  font-family: 'Cantarell', 'SourceHanSerifCN';
+  height: 100%;
+  color: #40464f;
+  font-size: 0.92rem;
+  background-color:  #ffffff;
+}
+
+#sidebar-content.sidebar-content {
+  margin-top: .5rem;
+}
+
+/*
+* Sidebar - FileNode
+*/
+
+.active-tab-files #info-panel-tab-file .info-panel-tab-border,
+.active-tab-outline #info-panel-tab-outline .info-panel-tab-border,
+.ty-show-search #info-panel-tab-search .info-panel-tab-border {
+  border-radius: 10px;
+  height: 1px;
+  background-color: rgb(181,54,41);
+}
+
+.file-node-content {
+  color: rgb(181,54,41);
+  line-height: 1.6rem;
+}
+
+span.file-node-title-name-part {
+  color: #40464f;
+}
+
+span.file-node-title-ext-part {
+  color: #40464f;
+}
+
+.file-node-icon {
+  padding-right: 0.2rem;
+}
+
+.file-tree-node.active>.file-node-background {
+  border-left: 4px solid rgb(181,54,41);
+  border-color: rgb(181,54,41);
+}
+
+/*
+* Sidebar - Outline
+*/
+
+#outline-content {
+  height: 100%;
+  overflow-x: hidden;
+  line-height: 1.6rem;
+  font-size: .96rem;
+}
+
+#outline-content .outline-active,
+.pin-outline .outline-active {
+  color: rgb(181,54,41);
+}
+
+.outline-item {
+  padding-left: 2em;
+}
+
+.outline-item>.outline-expander:before {
+  transform: translateY(-1px) !important;
+}
+
+/* Meta Block */
+
+pre.md-meta-block {
+  font-family: 'JetBrainsMono';
+  color: rgb(181,54,41);
+  background: #f6f8fa;
+  padding: 1.5rem;
+  margin: -37px 0rem 3.8rem;
+  filter: drop-shadow(#e3e8f0 0px 3px 3px);
+}
+
+pre.md-fences-advanced.md-focus .md-fences-adv-panel {
+  border-radius: .8rem;
+}
+
+/*
+* Scrollbar
+*/
+
+#outline-content::-webkit-scrollbar {
+  width: .5rem;
+}
+
+#file-library::-webkit-scrollbar {
+  width: .5rem;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: rgb(181,54,41);
+}
+
+::-webkit-scrollbar {
+  width: 1rem;
+}
+
+#write > h3.md-focus:before,
+#write > h4.md-focus:before,
+#write > h5.md-focus:before,
+#write > h6.md-focus:before,
+h3.md-focus:before,
+h4.md-focus:before,
+h5.md-focus:before,
+h6.md-focus:before {
+  color: inherit;
+  border: inherit;
+  border-radius: inherit;
+  position: inherit;
+  left: initial;
+  float: none;
+  top: initial;
+  font-size: inherit;
+  padding-left: inherit;
+  padding-right: inherit;
+  vertical-align: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+#write h1,
+#write h2,
+#write h3,
+#write h4,
+#write h5,
+#write h6 {
+  font-weight: 900;
+  page-break-after: avoid !important;
+}
+#write h1 {
+  font-family: "Times New Roman", "华文中宋";
+  font-size: 15pt;
+}
+#write h2 {
+  font-family: "Times New Roman", "华文中宋";
+  font-size: 14pt;
+}
+#write h3 {
+  font-family: "Times New Roman", "华文中宋";
+  font-size: 12pt;
+}
+#write h4 {
+  font-family: "Times New Roman", "楷体";
+  font-size: 12pt;
+}
+#write h5 {
+  font-family: "Times New Roman", "楷体";
+  font-size: 12pt;
+}
+#write h6 {
+  font-family: "Times New Roman", "楷体";
+  font-size: 12pt;
+}
+
+/* 标题自动加序号 */
+ #write {
+  counter-reset: h1
+}
+
+h1 {
+  counter-reset: h2
+}
+
+h2 {
+  counter-reset: h3
+}
+
+h3 {
+  counter-reset: h4
+}
+
+h4 {
+  counter-reset: h5
+}
+
+h5 {
+  counter-reset: h6
+}
+
+#write h1:before {
+  counter-increment: h1;
+  content: counter(h1) " "
+}
+
+#write h2:before {
+  counter-increment: h2;
+  content: counter(h1) "." counter(h2) " "
+}
+
+#write h3:before,
+h3.md-focus.md-heading:before {
+  counter-increment: h3;
+  content: counter(h1) "." counter(h2) "." counter(h3) " "
+}
+
+#write h4:before,
+h4.md-focus.md-heading:before {
+  counter-increment: h4;
+  content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) " "
+}
+
+#write h5:before,
+h5.md-focus.md-heading:before {
+  counter-increment: h5;
+  content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) " "
+}
+
+#write h6:before,
+h6.md-focus.md-heading:before {
+  counter-increment: h6;
+  content: counter(h1) "." counter(h2) "." counter(h3) "." counter(h4) "." counter(h5) "." counter(h6) " "
+}
+
+#write>h3.md-focus:before,
+#write>h4.md-focus:before,
+#write>h5.md-focus:before,
+#write>h6.md-focus:before,
+h3.md-focus:before,
+h4.md-focus:before,
+h5.md-focus:before,
+h6.md-focus:before {
+  color: inherit;
+  border: inherit;
+  border-radius: inherit;
+  position: inherit;
+  left:initial;
+  float: none;
+  top:initial;
+  font-size: inherit;
+  padding-left: inherit;
+  padding-right: inherit;
+  vertical-align: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+}
+
+
+/* 无序列表 */
+ul {
+  list-style: disc;
+}
+ul ul {
+  /*list-style: circle;*/
+  /* 请勿删除“–”后的空格, 他们对缩进有一定影响, 下同 */
+  list-style: "■   ";
+}
+ul ul ul {
+  list-style: "▪  ";
+}
+
+/* 有序列表 */
+ol {
+  list-style: decimal;
+}
+ol ol {
+  counter-reset: liist;
+  list-style: none;
+}
+ol ol li {
+  counter-increment: liist;
+  position: relative;
+}
+ol ol li::before {
+  content: "(" counter(liist,lower-alpha) ")";
+  position: absolute;
+  left: -1.8em;
+}
+ol ol ol {
+  counter-reset: liiist;
+  list-style: none;
+  margin: 0;
+}
+ol ol ol li {
+  counter-increment: liiist;
+  position: relative;
+}
+ol ol ol li::before {
+  content: counter(liiist,lower-roman) ".";
+  align-self: flex-end;
+  position: absolute;
+  left: -4.5em;
+  /* -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;*/
+  /* 为了让项目编号是重新用句点对齐而不是左对齐 */
+  width: 4em;
+  text-align: right;
+}
+
+li {
+  position: relative;
+}
+
+ol, ul {
+  padding-inline-start: 2em;
+}
+
+/* task列表 */
+/* Checkbox */
+
+#write input[type=checkbox] {
+  width: 0;
+}
+
+.task-list-item input::before {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  left: 0px; 
+  bottom: -1px;
+  width: 1.2rem;
+  height: 1.2rem;
+  border: 1.5px solid rgb(181,54,41);
+  border-radius: 2px;
+  background-color: #fdfdfd;
+  margin-top: -0.4rem;
+}
+
+/* 勾选后的样式 */
+.task-list-item input:checked::before {
+  background-color: rgb(181,54,41); 
+  border: 1.5px solid rgb(181,54,41); 
+}
+
+/* 勾选后的勾号 */
+.task-list-item input:checked::after {
+  content: '';
+  position: absolute;
+  left: 5.2px; /* 根据需要调整 */
+  bottom: 2.5px; /* 根据需要调整 */
+  width: 7px; /* 根据需要调整 */
+  height: 12px; /* 根据需要调整 */
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+/* 
+.task-list-done {
+  text-decoration: line-through;
+  text-decoration-color: rgb(181,54,41);
+} */
+
+
+#write table {
+  /* 三线表第一条线宽度 */
+  border-top: 1.2pt solid;
+  /* 三线表第二条线宽度 */
+  border-bottom: 1pt solid;
+  font-family: "Times New Roman","楷体";
+  font-size: 10.5pt;
+  text-align: center;
+  page-break-inside: avoid;
+  border-spacing: auto;
+  width: 100%;
+  margin: 0 auto;
+}
+#write table td {
+  padding: 2px;
+}
+#write table tr {
+  padding: 2px;
+}
+#write th {
+  padding: 0px 6px;
+}
+#write thead {
+  /* 表格标题（首行）样式 */
+  /* 三线表表头的线 */
+  border-bottom: 0.5pt solid;
+  font-family: "Times New Roman","楷体" !important;
+  font-weight: 900;
+  font-size: 12pt;
+}
+
+
+blockquote {
+  display: block;
+  font-size: 12pt;
+  overflow: auto;
+  border-left: 3px solid rgb(181,54,41);
+  padding: 15px 30px 15px 20px;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  background: white;
+  box-shadow: 2px 2px 5px #eef2f5;
+  font-family: 'Cantarell','SourceHanSerifCN';
+}
+
+
+/* 行内代码 */
+code {
+  font-family: 'Cantarell', 'SourceHanSerifCN';
+}
+
+h1 code, h2 code, h3 code, h4 code, h5 code, h6 code,
+p code,
+li code {
+  color: rgb(181,54,41);
+  background-color: #fefefe;
+  font-family: 'Cantarell', 'SourceHanSerifCN';
+  text-align: justify;
+  vertical-align: baseline;
+  box-shadow: 1px 1px 5px #c8d3df;
+  padding: 2px;
+  /* 圆角 */
+  border-radius: 1px;
+}
+
+/* 代码块样式 */
+
+.CodeMirror-lines {
+  padding-left: 4px;
+  font-family: 'Cantarell', 'SourceHanSerifCN';
+  font-size: 12pt;
+}
+
+.code-tooltip {
+  box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+  border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+  border: 1px solid #e7eaed;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+  padding: 0;
+  padding: 2px 4px 0px 4px;
+  font-size: 0.9em;
+}
+
+code {
+  background-color: #f3f4f4;
+  padding: 0 2px 0 2px;
+}
+
+.md-fences {
+  margin-bottom: 15px;
+  margin-top: 15px;
+  padding-top: 8px;
+  padding-bottom: 6px;
+}
+
+
+/* 目录 */
+.md-toc {
+  font-size: 12pt;
+}
+
+.md-toc-content {
+  margin-left: 2em;
+  /* 修复缺失上级标题时无法递增 */
+  counter-reset: toc-h2 toc-h3 toc-h4;
+  page-break-after: always;
+}
+
+.md-toc-inner {
+  margin-left: 0 !important;
+  color: black;
+}
+
+/* 目录标题内容属性 */
+.md-toc-h2,
+.md-toc-h3,
+.md-toc-h4,
+.md-toc-h5,
+.md-toc-h6 {
+  font-size: 12pt;
+  font-family: 'Cantarell',"楷体";
+}
+
+
+/* 目录标题前 */
+/* 序号重置 */
+.md-toc-content .md-toc-h1 {
+  display: 12pt;
+  counter-reset: toc-h1;
+}
+
+.md-toc-content .md-toc-h2 {
+  counter-reset: toc-h2;
+}
+.md-toc-content .md-toc-h3 {
+  counter-reset: toc-h3;
+}
+.md-toc-content .md-toc-h4 {
+  counter-reset: toc-h4;
+}
+.md-toc-content .md-toc-h5 {
+  counter-reset: toc-h5;
+}
+.md-toc-content .md-toc-h6 {
+  counter-reset: toc-h6;
+}
+/* 添加序号，序号自增 */
+.md-toc-content .md-toc-h1:before {
+  counter-increment: toc-h1;
+  content: counter(toc-h1);
+  margin-left: 1em;
+  margin-right: 0.5em;
+  color: black;
+}
+.md-toc-content .md-toc-h2:before {
+  counter-increment: toc-h2;
+  content: counter(toc-h1) "." counter(toc-h2);
+  margin-left: 2em;
+  margin-right: 0.5em;
+  color: black;
+}
+.md-toc-content .md-toc-h3:before {
+  counter-increment: toc-h3;
+  content: counter(toc-h1) "." counter(toc-h2) "." counter(toc-h3);
+  margin-left: 3em;
+  margin-right: 0.5em;
+  color: black;
+}
+.md-toc-content .md-toc-h4:before {
+  counter-increment: toc-h4;
+  content: counter(toc-h1) "." counter(toc-h2) "." counter(toc-h3) "." counter(toc-h4);
+  margin-left: 3.5em;
+  margin-right: 0.5em;
+  color: black;
+}
+.md-toc-content .md-toc-h5:before {
+  counter-increment: toc-h5;
+  content: counter(toc-h1) "." counter(toc-h2) "." counter(toc-h3) "." counter(toc-h4) "." counter(toc-h5);
+  margin-left: 5.5em;
+  margin-right: 0.5em;
+  color: black;
+}
+.md-toc-content .md-toc-h6:before {
+  counter-increment: toc-h6;
+  content: counter(toc-h1) "." counter(toc-h2) "." counter(toc-h3) "." counter(toc-h4) "." counter(toc-h5) "." counter(toc-h6);
+  margin-left: 7.5em;
+  margin-right: 0.5em;
+  color: black;
+}
+
+.md-toc-h4,
+.md-toc-h5,
+.md-toc-h6 {
+  display: none;
+}
