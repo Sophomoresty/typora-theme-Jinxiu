@@ -109,5 +109,9 @@ Typora的主题文件夹位置：C:\Users\你的用户名\AppData\Roaming\Typora
 >![image-20240825035038063.png](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/template/assets/image-20240825035038063.png?raw=true)
 >
 
+##鸣谢
 
+本项目是在下面两个开源项目的基础上完成的
+- [Keldos-Li/typora-latex-theme](https://github.com/Keldos-Li/typora-latex-theme)
+- [YiNNx/typora-theme-lapis](https://github.com/YiNNx/typora-theme-lapis) 
 
