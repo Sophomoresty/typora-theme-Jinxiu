@@ -1,7 +1,7 @@
 ![cover](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/img/cover.png?raw=true)
 # 红色学术风SCU主题
 
-[下载与安装](#下载与安装)<br/>
+[下载与安装](#下载与安装) | [论文封面修改](#论文封面修改) | [scu-essay格式总览](#scu-essay格式总览) <br/>
 本项目一共提供两个Typora主题，均为白天主题，无黑夜主题：
 
 
@@ -50,9 +50,27 @@
 | ![代码块-scu-essay.png](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/img/%E4%BB%A3%E7%A0%81%E5%9D%97-scu-essay.png?raw=true) | ![代码块-scu.png](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/img/%E4%BB%A3%E7%A0%81%E5%9D%97-scu.png?raw=true) |
 
 
-## 封面修改
 
-封面在`cover/essay-templated`中均有，使用HTML实现，使用时，替换掉对应的内容即可。
+## 下载与安装
+请完整阅读以下过程，以确保一切符合预期。
+
+Typora 是一个支持实时预览的 markdown 编辑器。在安装本主题前，请确认您已下载 Typora 并完成了安装。如果您对 markdown 的语法还不了解，您可以从这里获得帮助。
+
+前往本项目的 release 页面，下载source.zip。
+
+安装主题：解压缩下载的文件，进入解压缩后的文件夹，将`scc.css`、`scc-essay.css`两个文件拖入Typora的主题文件夹，即安装成功。<br>
+Typora的主题文件夹位置：C:\Users\你的用户名\AppData\Roaming\Typora\themes。
+
+安装字体：进入解压缩后的文件夹，打开`fonts`文件夹，双击字体文件，安装字体，建议全部安装。
+
+
+**请务必确认您完成了下面的步骤：**
+- 安装主题
+- 下载并安装所需的字体
+
+## 论文封面修改
+
+封面`cover-templated.md`和示例论文`essay-template.md`在`template`文件夹中。论文封面使用HTML实现，使用时，替换掉对应的内容即可。
 
 > 如需更换为自己的学校，找到自己学校的校徽、校名的高清图，在[在线转换网站中](https://products.aspose.app/imaging/zh-hans/conversion)将图片转化为SVG，在`cover/essay-template`封面HTML中替换相应的链接即可
 >
@@ -78,7 +96,7 @@
 |          引用块           |   Times New Roman，楷体   | 无              |   小四    |  12   |
 |      行内代码/代码块      |    Cantarell，思源宋体    | 无              |   小四    |  12   |
 
-## 页边距
+### 页边距
 
 上2.5cm，下2.5cm，左2.5cm，右2cm，装订线0
 
@@ -90,17 +108,5 @@
 >![image-20240825035038063.png](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/template/assets/image-20240825035038063.png?raw=true)
 >
 
-## 下载与安装
-请完整阅读以下过程，以确保一切符合预期。
-
-Typora 是一个支持实时预览的 markdown 编辑器。在安装本主题前，请确认您已下载 Typora 并完成了安装。如果您对 markdown 的语法还不了解，您可以从这里获得帮助。
-
-前往本项目的 release 页面，下载source.zip。
-
-解压缩这个文件，进入解压缩后的文件夹。参考Typora官方文件的安装教程完成剩余的安装步骤。
-
-**请务必确认您完成了下面的步骤：**
-- 安装主题
-- 下载并安装所需的字体
 
 
