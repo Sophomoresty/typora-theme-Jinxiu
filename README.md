@@ -1,18 +1,64 @@
-主题的文章格式参考`四川大学本科毕业论文（设计）格式和参考文献著录要求`。
+![cover](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/img/cover.png?raw=true)
 
-注意，主题的文章格式，从好看的角度优化过字体和行间距，**并未严格遵守要求**，但能够满足大部分**中国大陆**的**课程论文**需求。
+# 红色学术风SCU主题
 
-# 封面
+本项目一共提供两个Typora主题，均为白天主题，无黑夜主题：
+
+
+| theme-scu-essay                                              | them-scu                                                     |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| 以[latex主题](https://github.com/Keldos-Li/typora-latex-theme)为模板，参考`四川大学本科毕业论文（设计）格式和参考文献著录要求`，从好看的角度优化过字体和行间距，**并未严格遵守要求**，但能够满足大部分**中国大陆本科生**的**课程论文**需求。<br/>该模板适合课程论文的书写，不建议日用。 | 参考了lapis模板，采用川大锦绣红风格。<br />该模板适合日常使用 |
+| ![theme-scu-essay.png](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/img/theme-scu-essay.png?raw=true) | ![theme-scu.png](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/img/theme-scu.png?raw=true) |
+
+
+
+## 主题预览
+
+### 封面
+
+| ![封面.png](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/img/%E5%B0%81%E9%9D%A2.png?raw=true) | ![摘要、关键词.png](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/img/%E6%91%98%E8%A6%81%E3%80%81%E5%85%B3%E9%94%AE%E8%AF%8D.png?raw=true) |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+
+#### 层级标题
+
+|                          scu-essay                           |                             scu                              |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| ![层级标题-scu-essay.png](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/img/%E5%B1%82%E7%BA%A7%E6%A0%87%E9%A2%98-scu-essay.png?raw=true) | ![层级标题-scu.png](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/img/%E5%B1%82%E7%BA%A7%E6%A0%87%E9%A2%98-scu.png?raw=true) |
+
+#### 表格
+
+|                          scu-essay                           |                             scu                              |
+| :----------------------------------------------------------: | :----------------------------------------------------------: |
+| ![表格-scu-essay.png](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/img/%E8%A1%A8%E6%A0%BC-scu-essay.png?raw=true) | ![表格-scu.png](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/img/%E8%A1%A8%E6%A0%BC-scu.png?raw=true) |
+
+### 项目列表
+
+| scu-essay                                                    | scu                                                          |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![项目列表-scu-essay.png](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/img/%E9%A1%B9%E7%9B%AE%E5%88%97%E8%A1%A8-scu-essay.png?raw=true) | ![项目列表-scu.png](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/img/%E9%A1%B9%E7%9B%AE%E5%88%97%E8%A1%A8-scu.png?raw=true) |
+
+## 引用块
+
+两个主题样式相同
+
+![引用块-scu.png](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/img/%E5%BC%95%E7%94%A8%E5%9D%97-scu.png?raw=true)
+
+### 代码块
+
+| scu-essay                                                    | scu                                                          |
+| ------------------------------------------------------------ | ------------------------------------------------------------ |
+| ![代码块-scu-essay.png](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/img/%E4%BB%A3%E7%A0%81%E5%9D%97-scu-essay.png?raw=true) | ![代码块-scu.png](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/img/%E4%BB%A3%E7%A0%81%E5%9D%97-scu.png?raw=true) |
+
+
+## 封面修改
 
 封面在`cover/essay-templated`中均有，使用HTML实现，使用时，替换掉对应的内容即可。
 
-> 如需更换为自己的学校，找到自己学校的校徽、校名的高清图，在[在线转换网站中](https://products.aspose.app/imaging/zh-hans/conversion)将图片转化为SVG，在`cover/essay-template`封面HTML中
+> 如需更换为自己的学校，找到自己学校的校徽、校名的高清图，在[在线转换网站中](https://products.aspose.app/imaging/zh-hans/conversion)将图片转化为SVG，在`cover/essay-template`封面HTML中替换相应的链接即可
 >
-> ![image-20240825031255756](./assets/image-20240825031255756.png)
+>![image-20240825031255756.png](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/template/assets/image-20240825031255756.png?raw=true)
 
-# 文章格式
-
-## 格式总览
+## scu-essay格式总览
 
 |         大纲级别          |        英，中字体         | 样式            | 中文字号  | 磅/pt |
 | :-----------------------: | :-----------------------: | --------------- | :-------: | :---: |
@@ -41,23 +87,6 @@
 >如需修改页边距，请在主题`CSS`中修改图中的`margin`值，顺序是上、右、下、左，不要删除后面的`! important;`
 >举例，如果需要修改页边距为上1cm、下1cm、左2cm、右1.5cm，则应填：`1cm 1.5cm 1cm 2cm`
 >
-><img src="./assets/image-20240825035038063.png" alt="image-20240825035038063" style="zoom: 67%;" />
+>![image-20240825035038063.png](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/template/assets/image-20240825035038063.png?raw=true)
 
-# 川大主题色
-
-## 任务列表
-
-- [ ] 未完成
-
-- [x] 已完成
-
-## 引用块
-
->我是一个引用块
-
-## 行内代码
-
-`我是行内代码`
-
-# 超链接
 
