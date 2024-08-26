@@ -11,6 +11,10 @@ body {
     padding: 0 !important;
   }
 
+  #write a{
+    color: black !important;
+  }
+
   @page {
     margin: 2.5cm 2cm 2.5cm 2.5cm !important;
     /* 页边距 */
@@ -25,6 +29,8 @@ body {
   max-width: 21cm;
   background-color: white;
 }
+
+
 #write .md-math-block,
 #write .md-rawblock,
 #write p {
@@ -34,6 +40,10 @@ body {
 #write p {
   text-align: left;
   line-height: 1.5em;
+}
+
+#write a{
+  color: rgb(181,54,41);
 }
 
 hr {
@@ -414,7 +424,7 @@ ol, ul {
 .task-list-item input:checked::after {
   content: '';
   position: absolute;
-  left: 5.2px; /* 根据需要调整 */
+  left: 5px; /* 根据需要调整 */
   bottom: 2.5px; /* 根据需要调整 */
   width: 7px; /* 根据需要调整 */
   height: 12px; /* 根据需要调整 */
@@ -443,6 +453,7 @@ ol, ul {
   width: 100%;
   margin: 0 auto;
 }
+
 #write table td {
   padding: 2px;
 }
@@ -466,12 +477,13 @@ blockquote {
   display: block;
   font-size: 12pt;
   overflow: auto;
-  border-left: 3px solid rgb(181,54,41);
+  border-left: 5px solid rgb(181,54,41);
   padding: 15px 30px 15px 20px;
   margin-bottom: 20px;
   margin-top: 20px;
-  background: white;
-  box-shadow: 2px 2px 5px #eef2f5;
+  background: rgb(246, 248, 250);
+  box-shadow: 4px 4px 5px #c5c0c0;
+  border-radius:4px 15px 15px 4px;
   font-family: 'Cantarell','SourceHanSerifCN';
 }
 
@@ -487,12 +499,14 @@ li code {
   color: rgb(181,54,41);
   background-color: #fefefe;
   font-family: 'Cantarell', 'SourceHanSerifCN';
+  font-weight: 900;
   text-align: justify;
   vertical-align: baseline;
   box-shadow: 1px 1px 5px #c8d3df;
   padding: 2px;
-  /* 圆角 */
-  border-radius: 1px;
+  background: rgb(246, 248, 250);
+  border-radius: 14px;
+  box-shadow: 1px 1px 5px #c8d3df;
 }
 
 /* 代码块样式 */
