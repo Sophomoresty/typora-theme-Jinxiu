@@ -1,9 +1,10 @@
 ![cover](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/img/cover.png?raw=true)
-# 红色学术风SCU主题
+# 锦绣红 Typora 模板：大学生课程论文与日常写作的好帮手
+
 
 [下载与安装](#下载与安装) | [论文封面修改](#论文封面修改) | [scu-essay格式总览](#scu-essay格式总览) <br/>
 
-本项目一共提供两个Typora主题，均为浅色主题。<br/>
+本项目一共提供两个Typora主题样式，均为浅色主题。<br/>
 在 windows 上设计和测试。未经全面测试，但应该适用于 macos/Linux。
 
 | scu-essay                                              | scu                                                     |
