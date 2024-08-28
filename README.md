@@ -23,19 +23,19 @@
 
 #### 层级标题
 
-|                          scu-essay                           |                             scu                              |
+|                          Jinxiu-essay                           |                             Jinxiu                              |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | ![层级标题-scu-essay.png](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/img/%E5%B1%82%E7%BA%A7%E6%A0%87%E9%A2%98-scu-essay.png?raw=true) | ![层级标题-scu.png](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/img/%E5%B1%82%E7%BA%A7%E6%A0%87%E9%A2%98-scu.png?raw=true) |
 
 #### 表格
 
-|                          scu-essay                           |                             scu                              |
+|                          Jinxiu-essay                           |                             Jinxiu                              |
 | :----------------------------------------------------------: | :----------------------------------------------------------: |
 | ![表格-scu-essay.png](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/img/%E8%A1%A8%E6%A0%BC-scu-essay.png?raw=true) | ![表格-scu.png](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/img/%E8%A1%A8%E6%A0%BC-scu.png?raw=true) |
 
 ### 项目列表
 
-| scu-essay                                                    | scu                                                          |
+| Jinxiu-essay                                                    | Jinxiu                                                          |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | ![项目列表-scu-essay.png](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/img/%E9%A1%B9%E7%9B%AE%E5%88%97%E8%A1%A8-scu-essay.png?raw=true) | ![项目列表-scu.png](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/img/%E9%A1%B9%E7%9B%AE%E5%88%97%E8%A1%A8-scu.png?raw=true) |
 
@@ -47,7 +47,7 @@
 
 ### 代码块
 
-| scu-essay                                                    | scu                                                          |
+| Jinxiu-essay                                                    | Jinxiu                                                          |
 | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | ![代码块-scu-essay.png](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/img/%E4%BB%A3%E7%A0%81%E5%9D%97-scu-essay.png?raw=true) | ![代码块-scu.png](https://github.com/Sophomoresty/typora-scu-eassy-theme/blob/master/img/%E4%BB%A3%E7%A0%81%E5%9D%97-scu.png?raw=true) |
 
@@ -63,11 +63,11 @@ Typora 是一个支持实时预览的 markdown 编辑器。在安装本主题前
 ### 安装主题
 1. 打开`Typora`->文件->偏好设置->外观->打开主题文件夹
 
-2. 复制`scu.css`文件、`scu-essay.css`文件到主题文件夹下
+2. 复制`jinxiu.css`文件、`jinxiu-essay.css`文件到主题文件夹下
 
 3. 重启`Typora`
 
-4. 打开`Typora`->主题->选择 `scu-essay（论文主题）`或者 `scu（日用主题）`
+4. 打开`Typora`->主题->选择 `Jinxiu-essay（论文主题）`或者 `Jinxiu（日用主题）`
 
 ### 安装字体
 
