@@ -490,7 +490,7 @@ blockquote {
 
 /* 行内代码 */
 code {
-  font-family: "JetBrainsMono",'SourceHanSerifCN';
+  font-family: "JetBrainsMono","JetBrains Mono",monospace,'SourceHanSerifCN';
 }
 
 h1 code, h2 code, h3 code, h4 code, h5 code, h6 code,
@@ -498,7 +498,7 @@ p code,
 li code {
   color: rgb(181,54,41);
   background-color: #fefefe;
-  font-family: "JetBrainsMono",'SourceHanSerifCN';
+  font-family: "JetBrainsMono","JetBrains Mono",monospace,'SourceHanSerifCN';
   font-weight: 900;
   text-align: justify;
   vertical-align: baseline;
@@ -537,7 +537,7 @@ li code {
 .cm-s-inner.CodeMirror {
   padding: 1.5rem .8rem;
   color: #4f5467;
-  font-family: 'JetBrainsMono';
+  font-family: 'JetBrainsMono','JetBrains Mono',monospace;
   font-weight: 900;
   font-size: 1em;
   background-color: #f5f6f7;
